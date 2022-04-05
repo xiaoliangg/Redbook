@@ -11,7 +11,7 @@ import PagerTabStripView
 
 struct ExplorePage: View {
     private var swipeGestureEnabled: Bool
-    @State var selection = 1 // 默认显示第几个tab
+    @State var selection = 0 // 默认显示第几个tab
 
     public init(swipeGestureEnabled: Bool = true) {
         self.swipeGestureEnabled = swipeGestureEnabled

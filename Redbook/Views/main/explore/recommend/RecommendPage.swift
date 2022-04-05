@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct RecommendPage: View {
+    let fileInfos: [FileInfo]
+
+    init(){
+        fileInfos = ModelData().fileInfos
+    }
     var body: some View {
-        Text("RecommendPage")
+        List {
+            ForEach(fileInfos) { fileInfo in
+                FileItem(fileInfo: fileInfo)
+            }
+        }
     }
 }
 
@@ -17,4 +26,5 @@ struct RecommendPage_Previews: PreviewProvider {
     static var previews: some View {
         RecommendPage()
     }
+
 }
