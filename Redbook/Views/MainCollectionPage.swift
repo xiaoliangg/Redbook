@@ -18,6 +18,7 @@ struct MainCollectionPage: View {
         case aboutMe
     }
     
+    // 图标暂时使用 sf symbols
     var body: some View {
         TabView(selection: $selection) {
             MainPage()
