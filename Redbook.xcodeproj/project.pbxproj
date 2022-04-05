@@ -23,6 +23,10 @@
 		799943CB27FBF08E00418AF3 /* AboutMePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943CA27FBF08E00418AF3 /* AboutMePage.swift */; };
 		79F1127827FC29E400957976 /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 79F1127727FC29E400957976 /* PagerTabStripView */; };
 		79F1128627FC2C9F00957976 /* MainNavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128527FC2C9F00957976 /* MainNavBarItem.swift */; };
+		79F1128A27FC353B00957976 /* VideoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128927FC353B00957976 /* VideoPage.swift */; };
+		79F1128C27FC354F00957976 /* LivePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128B27FC354F00957976 /* LivePage.swift */; };
+		79F1128E27FC355D00957976 /* FashionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128D27FC355D00957976 /* FashionPage.swift */; };
+		79F1129027FC356300957976 /* FoodPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128F27FC356300957976 /* FoodPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		799943C827FBF08600418AF3 /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
 		799943CA27FBF08E00418AF3 /* AboutMePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMePage.swift; sourceTree = "<group>"; };
 		79F1128527FC2C9F00957976 /* MainNavBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavBarItem.swift; sourceTree = "<group>"; };
+		79F1128927FC353B00957976 /* VideoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPage.swift; sourceTree = "<group>"; };
+		79F1128B27FC354F00957976 /* LivePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePage.swift; sourceTree = "<group>"; };
+		79F1128D27FC355D00957976 /* FashionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionPage.swift; sourceTree = "<group>"; };
+		79F1128F27FC356300957976 /* FoodPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,10 @@
 			children = (
 				799943B827FBEDC700418AF3 /* ExplorePage.swift */,
 				799943C127FBEE7C00418AF3 /* recommend */,
+				79F1128927FC353B00957976 /* VideoPage.swift */,
+				79F1128B27FC354F00957976 /* LivePage.swift */,
+				79F1128D27FC355D00957976 /* FashionPage.swift */,
+				79F1128F27FC356300957976 /* FoodPage.swift */,
 			);
 			path = explore;
 			sourceTree = "<group>";
@@ -235,17 +247,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				799943A827FBEAF200418AF3 /* ContentView.swift in Sources */,
+				79F1128E27FC355D00957976 /* FashionPage.swift in Sources */,
 				799943C727FBF07B00418AF3 /* addNewPage.swift in Sources */,
 				799943C327FBEF3F00418AF3 /* MainCollectionPage.swift in Sources */,
 				799943A627FBEAF200418AF3 /* RedbookApp.swift in Sources */,
 				799943C927FBF08600418AF3 /* MessagePage.swift in Sources */,
 				799943B527FBEC0300418AF3 /* MainPage.swift in Sources */,
+				79F1129027FC356300957976 /* FoodPage.swift in Sources */,
+				79F1128A27FC353B00957976 /* VideoPage.swift in Sources */,
 				799943B927FBEDC700418AF3 /* ExplorePage.swift in Sources */,
 				79F1128627FC2C9F00957976 /* MainNavBarItem.swift in Sources */,
 				799943C527FBF01C00418AF3 /* ShoppingPage.swift in Sources */,
 				799943C027FBEE4600418AF3 /* RecommendPage.swift in Sources */,
 				799943B727FBEDBD00418AF3 /* FollowPage.swift in Sources */,
 				799943CB27FBF08E00418AF3 /* AboutMePage.swift in Sources */,
+				79F1128C27FC354F00957976 /* LivePage.swift in Sources */,
 				799943BB27FBEDEA00418AF3 /* NearbyPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

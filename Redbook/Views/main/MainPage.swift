@@ -24,7 +24,7 @@ struct MainPage: View {
             }
 
             ExplorePage().pagerTabItem {
-                MainNavBarItem(title: "探索")
+                MainNavBarItem(title: "发现")
             }
 
             NearbyPage().pagerTabItem {
