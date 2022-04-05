@@ -21,6 +21,8 @@
 		799943C727FBF07B00418AF3 /* addNewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943C627FBF07B00418AF3 /* addNewPage.swift */; };
 		799943C927FBF08600418AF3 /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943C827FBF08600418AF3 /* MessagePage.swift */; };
 		799943CB27FBF08E00418AF3 /* AboutMePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943CA27FBF08E00418AF3 /* AboutMePage.swift */; };
+		79F1127827FC29E400957976 /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 79F1127727FC29E400957976 /* PagerTabStripView */; };
+		79F1128627FC2C9F00957976 /* MainNavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128527FC2C9F00957976 /* MainNavBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,7 @@
 		799943C627FBF07B00418AF3 /* addNewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewPage.swift; sourceTree = "<group>"; };
 		799943C827FBF08600418AF3 /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
 		799943CA27FBF08E00418AF3 /* AboutMePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMePage.swift; sourceTree = "<group>"; };
+		79F1128527FC2C9F00957976 /* MainNavBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F1127827FC29E400957976 /* PagerTabStripView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,7 @@
 				799943A527FBEAF200418AF3 /* RedbookApp.swift */,
 				799943B327FBEBE100418AF3 /* Views */,
 				799943A927FBEAF300418AF3 /* Assets.xcassets */,
+				79F1128027FC2B3000957976 /* Resources */,
 				799943AB27FBEAF300418AF3 /* Preview Content */,
 			);
 			path = Redbook;
@@ -138,11 +143,19 @@
 			isa = PBXGroup;
 			children = (
 				799943B427FBEC0300418AF3 /* MainPage.swift */,
+				79F1128527FC2C9F00957976 /* MainNavBarItem.swift */,
 				799943BC27FBEE1400418AF3 /* follow */,
 				799943BD27FBEE2000418AF3 /* explore */,
 				799943BE27FBEE2900418AF3 /* nearby */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		79F1128027FC2B3000957976 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +174,9 @@
 			dependencies = (
 			);
 			name = Redbook;
+			packageProductDependencies = (
+				79F1127727FC29E400957976 /* PagerTabStripView */,
+			);
 			productName = Redbook;
 			productReference = 799943A227FBEAF200418AF3 /* Redbook.app */;
 			productType = "com.apple.product-type.application";
@@ -189,6 +205,9 @@
 				Base,
 			);
 			mainGroup = 7999439927FBEAF200418AF3;
+			packageReferences = (
+				79F1127627FC29E400957976 /* XCRemoteSwiftPackageReference "PagerTabStripView" */,
+			);
 			productRefGroup = 799943A327FBEAF200418AF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +241,7 @@
 				799943C927FBF08600418AF3 /* MessagePage.swift in Sources */,
 				799943B527FBEC0300418AF3 /* MainPage.swift in Sources */,
 				799943B927FBEDC700418AF3 /* ExplorePage.swift in Sources */,
+				79F1128627FC2C9F00957976 /* MainNavBarItem.swift in Sources */,
 				799943C527FBF01C00418AF3 /* ShoppingPage.swift in Sources */,
 				799943C027FBEE4600418AF3 /* RecommendPage.swift in Sources */,
 				799943B727FBEDBD00418AF3 /* FollowPage.swift in Sources */,
@@ -429,6 +449,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79F1127627FC29E400957976 /* XCRemoteSwiftPackageReference "PagerTabStripView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/PagerTabStripView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79F1127727FC29E400957976 /* PagerTabStripView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79F1127627FC29E400957976 /* XCRemoteSwiftPackageReference "PagerTabStripView" */;
+			productName = PagerTabStripView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7999439A27FBEAF200418AF3 /* Project object */;
 }

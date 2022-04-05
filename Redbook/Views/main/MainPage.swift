@@ -6,14 +6,34 @@
 //
 
 import SwiftUI
+import PagerTabStripView
 
 struct MainPage: View {
+    private var swipeGestureEnabled: Bool
+    @State var selection = 1 // 默认显示第几个tab
+
+    public init(swipeGestureEnabled: Bool = true) {
+        self.swipeGestureEnabled = swipeGestureEnabled
+    }
+
     var body: some View {
-        List{
-            FollowPage()
-            ExplorePage()
-            NearbyPage()
+        PagerTabStripView(swipeGestureEnabled: swipeGestureEnabled, selection: $selection) {
+            FollowPage().pagerTabItem {
+                // title的文字、颜色变化等设置
+                MainNavBarItem(title: "关注")
+            }
+
+            ExplorePage().pagerTabItem {
+                MainNavBarItem(title: "探索")
+            }
+
+            NearbyPage().pagerTabItem {
+                MainNavBarItem(title: "附近")
+            }
         }
+        .frame(alignment: .center)
+        .pagerTabStripViewStyle(.scrollableBarButton(indicatorBarColor: .blue, tabItemSpacing: 15, tabItemHeight: 50))
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
