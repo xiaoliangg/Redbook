@@ -24,6 +24,9 @@ class URLImageModel: ObservableObject {
         if loadImageFromCache() {
             return
         }
+        if loadImageFromLocal() {
+            return
+        }
         loadImageFromUrl()
     }
 
@@ -67,5 +70,19 @@ class URLImageModel: ObservableObject {
             self.imageCache.set(forKey: self.urlString!, image: loadedImage)
             self.image = loadedImage
         }
+    }
+    
+    // 本地获取图片
+    func loadImageFromLocal() -> Bool {
+        guard let urlString = urlString else {
+            return false
+        }
+        
+        guard let localImage = UIImage(named: urlString) else {
+            return false
+        }
+        self.imageCache.set(forKey: self.urlString!, image: localImage)
+        self.image = localImage
+        return true
     }
 }

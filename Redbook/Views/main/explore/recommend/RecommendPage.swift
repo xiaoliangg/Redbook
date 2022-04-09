@@ -9,16 +9,44 @@ import SwiftUI
 
 struct RecommendPage: View {
     let fileInfos: [FileInfo]
-
+    var leftFileInfos:[FileInfo]{
+        var r:[FileInfo] = []
+        for(index,value) in fileInfos.enumerated() {
+            if(index % 2 == 0){
+                r.append(value)
+            }
+        }
+        return r
+    }
+    var rightFileInfos:[FileInfo]{
+        var r:[FileInfo] = []
+        for(index,value) in fileInfos.enumerated() {
+            if(index % 2 != 0){
+                r.append(value)
+            }
+        }
+        return r
+    }
+    
     init(){
         fileInfos = ModelData().fileInfos
     }
     var body: some View {
-        List {
-            ForEach(fileInfos) { fileInfo in
-                FileItem(fileInfo: fileInfo)
+        ScrollView(.vertical, showsIndicators: false) {
+            HStack(alignment: .top){
+                VStack(alignment: .center, spacing: 0) {
+                    ForEach(leftFileInfos) { fileInfo in
+                        FileItem(fileInfo: fileInfo)
+                    }
+                }
+                VStack(alignment: .center, spacing: 0) {
+                    ForEach(rightFileInfos) { fileInfo in
+                        FileItem(fileInfo: fileInfo)
+                    }
+                }
             }
         }
+        .frame(height: 600)
     }
 }
 

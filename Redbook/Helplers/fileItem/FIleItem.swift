@@ -9,13 +9,14 @@ import SwiftUI
 
 struct FileItem: View {
     var fileInfo: FileInfo
+    let imageWidth:CGFloat = 180
 
     var body: some View {
         VStack(alignment: .leading) {
             fileInfo.image
 //                .renderingMode(.original)
 //                .resizable()
-                .frame(width: 155, height: 155)
+                .frame(width: imageWidth, height: imageWidth*722/533)
                 .cornerRadius(5)
 //                .clipShape(Circle())
 //                .overlay(Circle().stroke(Color.white, lineWidth: 4))

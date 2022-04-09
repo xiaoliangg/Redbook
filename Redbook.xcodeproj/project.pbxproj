@@ -66,6 +66,7 @@
 		79F1129E27FC3F2200957976 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		79F112A027FC415300957976 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		79F112A327FC457C00957976 /* FIleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIleItem.swift; sourceTree = "<group>"; };
+		79F112C227FC788500957976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,8 @@
 		799943A427FBEAF200418AF3 /* Redbook */ = {
 			isa = PBXGroup;
 			children = (
+				79F112C3280149DB00957976 /* images */,
+				79F112C227FC788500957976 /* Info.plist */,
 				799943A527FBEAF200418AF3 /* RedbookApp.swift */,
 				799943B327FBEBE100418AF3 /* Views */,
 				799943A927FBEAF300418AF3 /* Assets.xcassets */,
@@ -224,6 +227,21 @@
 				79F112A327FC457C00957976 /* FIleItem.swift */,
 			);
 			path = fileItem;
+			sourceTree = "<group>";
+		};
+		79F112C3280149DB00957976 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				79F112C4280149E400957976 /* recommend */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		79F112C4280149E400957976 /* recommend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = recommend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +478,7 @@
 				DEVELOPMENT_TEAM = 2QTK5HPG42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Redbook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -489,6 +508,7 @@
 				DEVELOPMENT_TEAM = 2QTK5HPG42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Redbook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
