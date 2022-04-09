@@ -18,6 +18,7 @@ struct AboutMePage: View {
             Button("English", action: {
                 self.identifier = "en"
             })
+            // 只需在 Localizable.strings 声明即可直接使用
             Text("Test")
         }
         .environment(\.locale, .init(identifier: identifier))
