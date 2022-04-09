@@ -36,6 +36,8 @@
 		79F112A127FC415300957976 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112A027FC415300957976 /* ModelData.swift */; };
 		79F112A427FC457C00957976 /* FIleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112A327FC457C00957976 /* FIleItem.swift */; };
 		79F112C9280150C700957976 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79F112CB280150C700957976 /* InfoPlist.strings */; };
+		79F112CF280165E700957976 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79F112D1280165E700957976 /* Localizable.strings */; };
+		79F112D42801691000957976 /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112D32801691000957976 /* I18N.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,9 @@
 		79F112C227FC788500957976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		79F112CA280150C700957976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79F112CC280150CC00957976 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		79F112D0280165E700957976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79F112D2280165EC00957976 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		79F112D32801691000957976 /* I18N.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I18N.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,7 @@
 		7999439927FBEAF200418AF3 = {
 			isa = PBXGroup;
 			children = (
+				79F112D1280165E700957976 /* Localizable.strings */,
 				79F112CB280150C700957976 /* InfoPlist.strings */,
 				799943A427FBEAF200418AF3 /* Redbook */,
 				799943A327FBEAF200418AF3 /* Products */,
@@ -211,6 +217,7 @@
 			children = (
 				79F112A227FC454E00957976 /* fileItem */,
 				79F1129B27FC3EDD00957976 /* URLImage */,
+				79F112D32801691000957976 /* I18N.swift */,
 			);
 			path = Helplers;
 			sourceTree = "<group>";
@@ -313,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F112CF280165E700957976 /* Localizable.strings in Resources */,
 				79F1129227FC3C7100957976 /* audioData.json in Resources */,
 				79F112C9280150C700957976 /* InfoPlist.strings in Resources */,
 				799943AD27FBEAF300418AF3 /* Preview Assets.xcassets in Resources */,
@@ -341,6 +349,7 @@
 				79F1128A27FC353B00957976 /* VideoPage.swift in Sources */,
 				799943B927FBEDC700418AF3 /* ExplorePage.swift in Sources */,
 				79F1128627FC2C9F00957976 /* MainNavBarItem.swift in Sources */,
+				79F112D42801691000957976 /* I18N.swift in Sources */,
 				799943C527FBF01C00418AF3 /* ShoppingPage.swift in Sources */,
 				799943C027FBEE4600418AF3 /* RecommendPage.swift in Sources */,
 				79F1129D27FC3F0500957976 /* URLImageModel.swift in Sources */,
@@ -364,6 +373,15 @@
 				79F112CC280150CC00957976 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79F112D1280165E700957976 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79F112D0280165E700957976 /* en */,
+				79F112D2280165EC00957976 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

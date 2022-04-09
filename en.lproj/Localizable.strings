@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Redbook
+
+  Created by yl on 2022/4/9.
+  
+*/
+"MainPage" = "Home";
+"Shopping" = "Shop";
+"AddNew" = "New";
+"Message" = "Messages";
+"AboutMe" = "Me";

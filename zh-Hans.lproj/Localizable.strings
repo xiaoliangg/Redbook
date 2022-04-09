@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Redbook
+
+  Created by yl on 2022/4/9.
+  
+*/
+"MainPage" = "主页";
+"Shopping" = "购物";
+"AddNew" = "新增";
+"Message" = "消息";
+"AboutMe" = "我的";
+

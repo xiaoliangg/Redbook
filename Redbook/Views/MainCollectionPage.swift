@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainCollectionPage: View {
     @State private var selection: Tab = .main
-    
+
     enum Tab {
         case main
         case shopping
@@ -23,32 +23,32 @@ struct MainCollectionPage: View {
         TabView(selection: $selection) {
             MainPage()
                 .tabItem {
-                    Label("首页", systemImage: "star")
+                    Label(I18N.mainPage, systemImage: "star")
 //                        .foregroundColor(.red)
                 }
                 .tag(Tab.main)
             
             ShoppingPage()
                 .tabItem {
-                    Label("购物", systemImage: "bag")
+                    Label(I18N.shopping, systemImage: "bag")
                 }
                 .tag(Tab.shopping)
             
             addNewPage()
                 .tabItem {
-                    Label("新增", systemImage: "plus")
+                    Label(I18N.addNew, systemImage: "plus")
                 }
                 .tag(Tab.addNew)
             
             MessagePage()
                 .tabItem {
-                    Label("消息", systemImage: "message")
+                    Label(I18N.message, systemImage: "message")
                 }
                 .tag(Tab.message)
             
             AboutMePage()
                 .tabItem {
-                    Label("我", systemImage: "person.crop.circle")
+                    Label(I18N.aboutMe, systemImage: "person.crop.circle")
                 }
                 .tag(Tab.aboutMe)
             
