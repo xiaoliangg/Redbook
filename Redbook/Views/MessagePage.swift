@@ -9,7 +9,14 @@ import SwiftUI
 
 struct MessagePage: View {
     var body: some View {
-        Text("Message Page!!")
+        HStack{
+            Text("Message Pageeeeeeeeee2!!")
+                .frame(width: 150, height: 30, alignment: .leading)
+                .truncationMode(.head) // 过长时截断头部
+            Text("Message Pageeeeeeeeee2!!")
+                .frame(width: 150, height: 30, alignment: .leading)
+                .truncationMode(.tail) // 过长时截断尾部
+        }
     }
 }
 
