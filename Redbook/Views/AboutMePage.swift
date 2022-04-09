@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct AboutMePage: View {
+    @State var identifier = "en"
+
     var body: some View {
-        Text("AboutMe Page!!")
+        VStack {
+            Button("中文", action: {
+                self.identifier = "zh-Hans"
+            })
+            Button("English", action: {
+                self.identifier = "en"
+            })
+            Text("Test")
+        }
+        .environment(\.locale, .init(identifier: identifier))
     }
 }
 
