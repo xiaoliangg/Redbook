@@ -35,6 +35,7 @@
 		79F1129F27FC3F2200957976 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1129E27FC3F2200957976 /* ImageCache.swift */; };
 		79F112A127FC415300957976 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112A027FC415300957976 /* ModelData.swift */; };
 		79F112A427FC457C00957976 /* FIleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112A327FC457C00957976 /* FIleItem.swift */; };
+		79F112C9280150C700957976 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79F112CB280150C700957976 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,8 @@
 		79F112A027FC415300957976 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		79F112A327FC457C00957976 /* FIleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIleItem.swift; sourceTree = "<group>"; };
 		79F112C227FC788500957976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		79F112CA280150C700957976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79F112CC280150CC00957976 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		7999439927FBEAF200418AF3 = {
 			isa = PBXGroup;
 			children = (
+				79F112CB280150C700957976 /* InfoPlist.strings */,
 				799943A427FBEAF200418AF3 /* Redbook */,
 				799943A327FBEAF200418AF3 /* Products */,
 			);
@@ -289,6 +293,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 7999439927FBEAF200418AF3;
 			packageReferences = (
@@ -309,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F1129227FC3C7100957976 /* audioData.json in Resources */,
+				79F112C9280150C700957976 /* InfoPlist.strings in Resources */,
 				799943AD27FBEAF300418AF3 /* Preview Assets.xcassets in Resources */,
 				799943AA27FBEAF300418AF3 /* Assets.xcassets in Resources */,
 			);
@@ -349,6 +355,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79F112CB280150C700957976 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79F112CA280150C700957976 /* en */,
+				79F112CC280150CC00957976 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		799943AE27FBEAF300418AF3 /* Debug */ = {
@@ -479,6 +497,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Redbook/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "测试";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -509,6 +528,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Redbook/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "测试";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
