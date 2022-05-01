@@ -289,6 +289,7 @@
 				7999439E27FBEAF200418AF3 /* Sources */,
 				7999439F27FBEAF200418AF3 /* Frameworks */,
 				799943A027FBEAF200418AF3 /* Resources */,
+				8711FF8993EBC8AB0A8FAC72 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,6 +350,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8711FF8993EBC8AB0A8FAC72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Redbook/Pods-Redbook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B0291534E72CB64B6902B9A8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

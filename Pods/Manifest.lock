@@ -1,20 +1,32 @@
 PODS:
   - PagerTabStripView (3.2.0)
+  - PryntTrimmerView (4.0.2)
+  - SteviaLayout (4.7.3)
   - YLiangTool (0.0.3)
+  - YPImagePicker (5.0.0):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 4.7.3)
 
 DEPENDENCIES:
   - PagerTabStripView (~> 3.2.0)
   - YLiangTool (= 0.0.3)
+  - YPImagePicker (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - PagerTabStripView
+    - PryntTrimmerView
+    - SteviaLayout
     - YLiangTool
+    - YPImagePicker
 
 SPEC CHECKSUMS:
   PagerTabStripView: 68742b1b0d7a9e78637b98458b5d1825aa6c4eef
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   YLiangTool: 72d4edb0f1039a747f7b4346002a72c789d80f13
+  YPImagePicker: 1463a19a36244e209dcb03c30e63559c5afa9602
 
-PODFILE CHECKSUM: 64fa9126ada47ef4ec6fc06c331cfd7ed2125351
+PODFILE CHECKSUM: 977d2d061838130a2d5d4457047d80ca54aed596
 
 COCOAPODS: 1.11.2
