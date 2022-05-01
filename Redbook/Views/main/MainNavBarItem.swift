@@ -31,7 +31,7 @@ struct MainNavBarItem: View, PagerTabViewDelegate {
         switch state {
         case .selected:
             self.theme.textColor = .blue
-        case .highlighted:
+        case .highlighted: // 点击时的颜色
             self.theme.textColor = .red
         default:
             self.theme.textColor = .gray
