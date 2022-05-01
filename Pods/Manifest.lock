@@ -1,0 +1,20 @@
+PODS:
+  - PagerTabStripView (3.2.0)
+  - YLiangTool (0.0.3)
+
+DEPENDENCIES:
+  - PagerTabStripView (~> 3.2.0)
+  - YLiangTool (= 0.0.3)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - PagerTabStripView
+    - YLiangTool
+
+SPEC CHECKSUMS:
+  PagerTabStripView: 68742b1b0d7a9e78637b98458b5d1825aa6c4eef
+  YLiangTool: 72d4edb0f1039a747f7b4346002a72c789d80f13
+
+PODFILE CHECKSUM: 64fa9126ada47ef4ec6fc06c331cfd7ed2125351
+
+COCOAPODS: 1.11.2

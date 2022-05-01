@@ -1,0 +1,6 @@
+module Pods_Redbook {
+  umbrella header "Pods-Redbook-umbrella.h"
+
+  export *
+  module * { export * }
+}

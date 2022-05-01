@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CADDAB60E21AB047D0CD900B0114982 /* FixedSizeNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C064AD94396DC820C655E3756EB16B1 /* FixedSizeNavBarView.swift */; };
+		1F3E9163894FB8F98364F8E8AD76F84F /* PagerTabViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE71484D90BB5CB7D1377D9B6AB84E9B /* PagerTabViewStyle.swift */; };
+		251C867E622FB01693536C62BB1692E1 /* ScrollableNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60130CCCA7DAE8285F0539A3610F76 /* ScrollableNavBarView.swift */; };
+		4C07B8385D31373CC1F37D9BB8BF8A61 /* PagerTabItemModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3D04E862B3F7C509F67EE8F3688D5 /* PagerTabItemModifier.swift */; };
+		5E7740AD174846562758CB9D728B1F33 /* Pods-Redbook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F621EBF2B9C4CA549CF85E33ABA3418 /* Pods-Redbook-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		69BF586D76509831F4801938435B5663 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0F239377D1F5E4DE23574E77FAA05 /* DataStore.swift */; };
+		6E7F5A06DBDD5B75D365874770801800 /* IndicatorBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C438BBDEC32E2222BFD82201F42B19E4 /* IndicatorBarView.swift */; };
+		6F6B0AA69CFC78BA6990222EA6DA90BD /* PagerTabViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB563095B0366197422DC51651C12475 /* PagerTabViewDelegate.swift */; };
+		71368C0D80614A487F4B144229FC3AFC /* PagerTabStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BD0784B0AC4C02692E4168C225CFBC /* PagerTabStripView.swift */; };
+		89015A0AA861688EC1022FC23042277D /* Pods-Redbook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF358520BFFC3CD3264ABEDF6D31EDB /* Pods-Redbook-dummy.m */; };
+		9CBBCA14E40D10A3C862970F0F319403 /* NavBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE2DCD06E7D0C516ADF7F51F9029630 /* NavBarModifier.swift */; };
+		B99C09316219FF6618BDE95926180F05 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2B7C17B78E72ACF27F10BC6255B487 /* View+Modifiers.swift */; };
+		BD76C4F9F8632F95F818E7AD49C5EFCB /* PagerStyle+CustomCaseInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C8CED4F704515B5786BFC5BE52C77 /* PagerStyle+CustomCaseInitializers.swift */; };
+		C0D8A344972ABD5A3B7DF428303C20EA /* SegmentedNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750ADB14E70D63AB381DD66DAF81C6BC /* SegmentedNavBarView.swift */; };
+		D2BCF74E886E9F42DC3813EA5CDF210F /* YLiangTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9EE5D4A3528F153F6248839E8F50AF /* YLiangTool-dummy.m */; };
+		E040AE9A79FECD9C3E765DCF9E5402C7 /* YLTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 77CA5D91A7C50A33F9C8738C3EC62FF6 /* YLTools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE86EB168FFB9625E8EB38C7E8A80CC1 /* PagerSetAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E564B0428C80CB1B7EC1AD3EB6E7C46D /* PagerSetAppearModifier.swift */; };
+		F09066D1B6224A1F560598F2A19ED5B5 /* PagerTabStripView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B853AF33E6CAA89D750D13AA1C8689 /* PagerTabStripView-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB4920AFBAB71482E555BC1BF48395E4 /* YLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E52A675797F8BE3DDEDF0D9C75C459 /* YLTools.m */; };
+		FC1CDA9E306ED72C25DC2B93F94549DC /* NavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C454318E50E31C75B4F0E5D3CE95B1B9 /* NavBarItem.swift */; };
+		FC53832009563D83B99D9C0B1D4A46C8 /* PagerTabStripView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D63838CA8A0151EAC9D2A48DB3C5382A /* PagerTabStripView-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA0EFCA61108C024A6D8950E58AB4030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BA23BF48A37E07B01A898EA392A734A;
+			remoteInfo = PagerTabStripView;
+		};
+		E0F21D4E32B58854EE7A631E14F37D36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 658BFCFC3A68781F8EDBF9D594A0C51C;
+			remoteInfo = YLiangTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09965A77BF37340004FC9100CBFB0FFB /* Pods-Redbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Redbook.release.xcconfig"; sourceTree = "<group>"; };
+		0CF6B1E74F4DB7A3A91947162B23D2D1 /* YLiangTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLiangTool-prefix.pch"; sourceTree = "<group>"; };
+		0DE2DCD06E7D0C516ADF7F51F9029630 /* NavBarModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavBarModifier.swift; path = Sources/NavBarModifier.swift; sourceTree = "<group>"; };
+		13E52A675797F8BE3DDEDF0D9C75C459 /* YLTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLTools.m; path = PodDemoPublic/PodDemoPublic/YLTools.m; sourceTree = "<group>"; };
+		15D5D9BE4698DB7772EE1CEF6A238F3A /* YLiangTool */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = YLiangTool; path = libYLiangTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F621EBF2B9C4CA549CF85E33ABA3418 /* Pods-Redbook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Redbook-umbrella.h"; sourceTree = "<group>"; };
+		21273D3398907F998DDF05EB52BAF619 /* YLiangTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLiangTool.release.xcconfig; sourceTree = "<group>"; };
+		23BF747AF0E2B07579399F757F3F8245 /* Pods-Redbook */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-Redbook"; path = "libPods-Redbook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF358520BFFC3CD3264ABEDF6D31EDB /* Pods-Redbook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Redbook-dummy.m"; sourceTree = "<group>"; };
+		36B853AF33E6CAA89D750D13AA1C8689 /* PagerTabStripView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTabStripView-umbrella.h"; sourceTree = "<group>"; };
+		37BD0784B0AC4C02692E4168C225CFBC /* PagerTabStripView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripView.swift; path = Sources/PagerTabStripView.swift; sourceTree = "<group>"; };
+		43DC56256FC32A5910EB4CD2930A04F9 /* PagerTabStripView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagerTabStripView-prefix.pch"; sourceTree = "<group>"; };
+		51D007643411B839BF41C2A184AAF80E /* Pods-Redbook-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Redbook-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A39AC37262AFFB4E8B27A440A120F3D /* Pods-Redbook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Redbook.modulemap"; sourceTree = "<group>"; };
+		5E0299CB08F1F1BDFB07071CD6C3C9A3 /* PagerTabStripView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagerTabStripView.release.xcconfig; sourceTree = "<group>"; };
+		6591BBD180967CC3AECB64CD822CD99F /* Pods-Redbook-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Redbook-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6C064AD94396DC820C655E3756EB16B1 /* FixedSizeNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixedSizeNavBarView.swift; path = Sources/NavigationBarStyles/FixedSizeNavBarView.swift; sourceTree = "<group>"; };
+		6D9EE5D4A3528F153F6248839E8F50AF /* YLiangTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLiangTool-dummy.m"; sourceTree = "<group>"; };
+		750ADB14E70D63AB381DD66DAF81C6BC /* SegmentedNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedNavBarView.swift; path = Sources/NavigationBarStyles/SegmentedNavBarView.swift; sourceTree = "<group>"; };
+		77CA5D91A7C50A33F9C8738C3EC62FF6 /* YLTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLTools.h; path = PodDemoPublic/PodDemoPublic/YLTools.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = PagerTabStripView; path = libPagerTabStripView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B14C497D1DFFA859F0CC3747493646 /* PagerTabStripView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PagerTabStripView.modulemap; sourceTree = "<group>"; };
+		AA3C8CED4F704515B5786BFC5BE52C77 /* PagerStyle+CustomCaseInitializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PagerStyle+CustomCaseInitializers.swift"; path = "Sources/PagerStyle+CustomCaseInitializers.swift"; sourceTree = "<group>"; };
+		AB563095B0366197422DC51651C12475 /* PagerTabViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabViewDelegate.swift; path = Sources/PagerTabViewDelegate.swift; sourceTree = "<group>"; };
+		ADD0F239377D1F5E4DE23574E77FAA05 /* DataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = Sources/DataStore.swift; sourceTree = "<group>"; };
+		AFA5B27C9567D4A8AEADFBBC041FFCB9 /* PagerTabStripView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagerTabStripView.debug.xcconfig; sourceTree = "<group>"; };
+		BE71484D90BB5CB7D1377D9B6AB84E9B /* PagerTabViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabViewStyle.swift; path = Sources/PagerTabViewStyle.swift; sourceTree = "<group>"; };
+		C39FC21A61249DFBE762F37EC28F0204 /* Pods-Redbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Redbook.debug.xcconfig"; sourceTree = "<group>"; };
+		C438BBDEC32E2222BFD82201F42B19E4 /* IndicatorBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorBarView.swift; path = Sources/NavigationBarStyles/IndicatorBarView.swift; sourceTree = "<group>"; };
+		C454318E50E31C75B4F0E5D3CE95B1B9 /* NavBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavBarItem.swift; path = Sources/NavBarItem.swift; sourceTree = "<group>"; };
+		CB2B7C17B78E72ACF27F10BC6255B487 /* View+Modifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+Modifiers.swift"; path = "Sources/View+Modifiers.swift"; sourceTree = "<group>"; };
+		CB60130CCCA7DAE8285F0539A3610F76 /* ScrollableNavBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollableNavBarView.swift; path = Sources/NavigationBarStyles/ScrollableNavBarView.swift; sourceTree = "<group>"; };
+		D63838CA8A0151EAC9D2A48DB3C5382A /* PagerTabStripView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagerTabStripView-dummy.m"; sourceTree = "<group>"; };
+		DC3FAE6C9DBC29C571B32D2B16F0B7E9 /* YLiangTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YLiangTool.debug.xcconfig; sourceTree = "<group>"; };
+		E564B0428C80CB1B7EC1AD3EB6E7C46D /* PagerSetAppearModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerSetAppearModifier.swift; path = Sources/PagerSetAppearModifier.swift; sourceTree = "<group>"; };
+		EDF3D04E862B3F7C509F67EE8F3688D5 /* PagerTabItemModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabItemModifier.swift; path = Sources/PagerTabItemModifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91F73405B5640D3B94111916179136E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0CFAB9BD08D7230AFD7690FB383363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B5237D31417D133BDC18D61383D17B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CDFFDB839D168F43C069617CE1E3416 /* YLiangTool */ = {
+			isa = PBXGroup;
+			children = (
+				77CA5D91A7C50A33F9C8738C3EC62FF6 /* YLTools.h */,
+				13E52A675797F8BE3DDEDF0D9C75C459 /* YLTools.m */,
+				E1EE1D61A55EAD16A5A2750A9EE9EEA0 /* Support Files */,
+			);
+			name = YLiangTool;
+			path = YLiangTool;
+			sourceTree = "<group>";
+		};
+		53D9CE9EF3F6439292D6E21441E22643 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A69DAA294220D62E3441BF1052A55A33 /* PagerTabStripView */,
+				4CDFFDB839D168F43C069617CE1E3416 /* YLiangTool */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7436420818C8F5B89831BEB5D0E86955 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5B14C497D1DFFA859F0CC3747493646 /* PagerTabStripView.modulemap */,
+				D63838CA8A0151EAC9D2A48DB3C5382A /* PagerTabStripView-dummy.m */,
+				43DC56256FC32A5910EB4CD2930A04F9 /* PagerTabStripView-prefix.pch */,
+				36B853AF33E6CAA89D750D13AA1C8689 /* PagerTabStripView-umbrella.h */,
+				AFA5B27C9567D4A8AEADFBBC041FFCB9 /* PagerTabStripView.debug.xcconfig */,
+				5E0299CB08F1F1BDFB07071CD6C3C9A3 /* PagerTabStripView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PagerTabStripView";
+			sourceTree = "<group>";
+		};
+		A69DAA294220D62E3441BF1052A55A33 /* PagerTabStripView */ = {
+			isa = PBXGroup;
+			children = (
+				ADD0F239377D1F5E4DE23574E77FAA05 /* DataStore.swift */,
+				6C064AD94396DC820C655E3756EB16B1 /* FixedSizeNavBarView.swift */,
+				C438BBDEC32E2222BFD82201F42B19E4 /* IndicatorBarView.swift */,
+				C454318E50E31C75B4F0E5D3CE95B1B9 /* NavBarItem.swift */,
+				0DE2DCD06E7D0C516ADF7F51F9029630 /* NavBarModifier.swift */,
+				E564B0428C80CB1B7EC1AD3EB6E7C46D /* PagerSetAppearModifier.swift */,
+				AA3C8CED4F704515B5786BFC5BE52C77 /* PagerStyle+CustomCaseInitializers.swift */,
+				EDF3D04E862B3F7C509F67EE8F3688D5 /* PagerTabItemModifier.swift */,
+				37BD0784B0AC4C02692E4168C225CFBC /* PagerTabStripView.swift */,
+				AB563095B0366197422DC51651C12475 /* PagerTabViewDelegate.swift */,
+				BE71484D90BB5CB7D1377D9B6AB84E9B /* PagerTabViewStyle.swift */,
+				CB60130CCCA7DAE8285F0539A3610F76 /* ScrollableNavBarView.swift */,
+				750ADB14E70D63AB381DD66DAF81C6BC /* SegmentedNavBarView.swift */,
+				CB2B7C17B78E72ACF27F10BC6255B487 /* View+Modifiers.swift */,
+				7436420818C8F5B89831BEB5D0E86955 /* Support Files */,
+			);
+			name = PagerTabStripView;
+			path = PagerTabStripView;
+			sourceTree = "<group>";
+		};
+		C786626EA1FAA161EBE888E55B0D863F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F18756155B25CEA474E876E1E35C8F55 /* Pods-Redbook */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				53D9CE9EF3F6439292D6E21441E22643 /* Pods */,
+				D7156119AD0A9C25044920CA743670B6 /* Products */,
+				C786626EA1FAA161EBE888E55B0D863F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D7156119AD0A9C25044920CA743670B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */,
+				23BF747AF0E2B07579399F757F3F8245 /* Pods-Redbook */,
+				15D5D9BE4698DB7772EE1CEF6A238F3A /* YLiangTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1EE1D61A55EAD16A5A2750A9EE9EEA0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D9EE5D4A3528F153F6248839E8F50AF /* YLiangTool-dummy.m */,
+				0CF6B1E74F4DB7A3A91947162B23D2D1 /* YLiangTool-prefix.pch */,
+				DC3FAE6C9DBC29C571B32D2B16F0B7E9 /* YLiangTool.debug.xcconfig */,
+				21273D3398907F998DDF05EB52BAF619 /* YLiangTool.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YLiangTool";
+			sourceTree = "<group>";
+		};
+		F18756155B25CEA474E876E1E35C8F55 /* Pods-Redbook */ = {
+			isa = PBXGroup;
+			children = (
+				5A39AC37262AFFB4E8B27A440A120F3D /* Pods-Redbook.modulemap */,
+				6591BBD180967CC3AECB64CD822CD99F /* Pods-Redbook-acknowledgements.markdown */,
+				51D007643411B839BF41C2A184AAF80E /* Pods-Redbook-acknowledgements.plist */,
+				2EF358520BFFC3CD3264ABEDF6D31EDB /* Pods-Redbook-dummy.m */,
+				1F621EBF2B9C4CA549CF85E33ABA3418 /* Pods-Redbook-umbrella.h */,
+				C39FC21A61249DFBE762F37EC28F0204 /* Pods-Redbook.debug.xcconfig */,
+				09965A77BF37340004FC9100CBFB0FFB /* Pods-Redbook.release.xcconfig */,
+			);
+			name = "Pods-Redbook";
+			path = "Target Support Files/Pods-Redbook";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F37A4AE141C2E47F577298BE7C46D30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7740AD174846562758CB9D728B1F33 /* Pods-Redbook-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93D43D6C874192A41534B61DD6253AA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09066D1B6224A1F560598F2A19ED5B5 /* PagerTabStripView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9763FDC1D1E8B9652B395939410EC19B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E040AE9A79FECD9C3E765DCF9E5402C7 /* YLTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0703C8B17946FB2F93296A31C5388A0A /* Pods-Redbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E4B9E56E949B36D689846015E05C894 /* Build configuration list for PBXNativeTarget "Pods-Redbook" */;
+			buildPhases = (
+				7F37A4AE141C2E47F577298BE7C46D30 /* Headers */,
+				8C220B44DEE0986E4325AE25D2BCF92B /* Sources */,
+				AE0CFAB9BD08D7230AFD7690FB383363 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44E788A5295B9D4F6A26CDA2A2706ACF /* PBXTargetDependency */,
+				CCAA229C01ADBB054A9C7A6B1C5D48CF /* PBXTargetDependency */,
+			);
+			name = "Pods-Redbook";
+			productName = "Pods-Redbook";
+			productReference = 23BF747AF0E2B07579399F757F3F8245 /* Pods-Redbook */;
+			productType = "com.apple.product-type.library.static";
+		};
+		658BFCFC3A68781F8EDBF9D594A0C51C /* YLiangTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0957BDAC7A5A6737DBB61AF43EDC4B32 /* Build configuration list for PBXNativeTarget "YLiangTool" */;
+			buildPhases = (
+				9763FDC1D1E8B9652B395939410EC19B /* Headers */,
+				41D8CFE63E78ACBC16C57CBEA420C3CA /* Sources */,
+				E9B5237D31417D133BDC18D61383D17B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLiangTool;
+			productName = YLiangTool;
+			productReference = 15D5D9BE4698DB7772EE1CEF6A238F3A /* YLiangTool */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7BA23BF48A37E07B01A898EA392A734A /* PagerTabStripView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D300BE27098C6A23816D78A73E7CC08B /* Build configuration list for PBXNativeTarget "PagerTabStripView" */;
+			buildPhases = (
+				93D43D6C874192A41534B61DD6253AA6 /* Headers */,
+				66708EA9FE960D7ED3F1FDAC00CDAB72 /* Sources */,
+				91F73405B5640D3B94111916179136E7 /* Frameworks */,
+				2CB5D8A8EEF43F03BC5495705F56D969 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagerTabStripView;
+			productName = PagerTabStripView;
+			productReference = 9FF37491ED4B59538C4D37FA3173A5DE /* PagerTabStripView */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D7156119AD0A9C25044920CA743670B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BA23BF48A37E07B01A898EA392A734A /* PagerTabStripView */,
+				0703C8B17946FB2F93296A31C5388A0A /* Pods-Redbook */,
+				658BFCFC3A68781F8EDBF9D594A0C51C /* YLiangTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CB5D8A8EEF43F03BC5495705F56D969 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/PagerTabStripView/PagerTabStripView.modulemap",
+				"${PODS_ROOT}/Headers/Public/PagerTabStripView/PagerTabStripView-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/PagerTabStripView-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/PagerTabStripView/PagerTabStripView.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/PagerTabStripView/PagerTabStripView-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41D8CFE63E78ACBC16C57CBEA420C3CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BCF74E886E9F42DC3813EA5CDF210F /* YLiangTool-dummy.m in Sources */,
+				FB4920AFBAB71482E555BC1BF48395E4 /* YLTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66708EA9FE960D7ED3F1FDAC00CDAB72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69BF586D76509831F4801938435B5663 /* DataStore.swift in Sources */,
+				0CADDAB60E21AB047D0CD900B0114982 /* FixedSizeNavBarView.swift in Sources */,
+				6E7F5A06DBDD5B75D365874770801800 /* IndicatorBarView.swift in Sources */,
+				FC1CDA9E306ED72C25DC2B93F94549DC /* NavBarItem.swift in Sources */,
+				9CBBCA14E40D10A3C862970F0F319403 /* NavBarModifier.swift in Sources */,
+				EE86EB168FFB9625E8EB38C7E8A80CC1 /* PagerSetAppearModifier.swift in Sources */,
+				BD76C4F9F8632F95F818E7AD49C5EFCB /* PagerStyle+CustomCaseInitializers.swift in Sources */,
+				4C07B8385D31373CC1F37D9BB8BF8A61 /* PagerTabItemModifier.swift in Sources */,
+				71368C0D80614A487F4B144229FC3AFC /* PagerTabStripView.swift in Sources */,
+				FC53832009563D83B99D9C0B1D4A46C8 /* PagerTabStripView-dummy.m in Sources */,
+				6F6B0AA69CFC78BA6990222EA6DA90BD /* PagerTabViewDelegate.swift in Sources */,
+				1F3E9163894FB8F98364F8E8AD76F84F /* PagerTabViewStyle.swift in Sources */,
+				251C867E622FB01693536C62BB1692E1 /* ScrollableNavBarView.swift in Sources */,
+				C0D8A344972ABD5A3B7DF428303C20EA /* SegmentedNavBarView.swift in Sources */,
+				B99C09316219FF6618BDE95926180F05 /* View+Modifiers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C220B44DEE0986E4325AE25D2BCF92B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89015A0AA861688EC1022FC23042277D /* Pods-Redbook-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44E788A5295B9D4F6A26CDA2A2706ACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PagerTabStripView;
+			target = 7BA23BF48A37E07B01A898EA392A734A /* PagerTabStripView */;
+			targetProxy = AA0EFCA61108C024A6D8950E58AB4030 /* PBXContainerItemProxy */;
+		};
+		CCAA229C01ADBB054A9C7A6B1C5D48CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YLiangTool;
+			target = 658BFCFC3A68781F8EDBF9D594A0C51C /* YLiangTool */;
+			targetProxy = E0F21D4E32B58854EE7A631E14F37D36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		187D79DFC6605C61047AE62CD23B8743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21273D3398907F998DDF05EB52BAF619 /* YLiangTool.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YLiangTool/YLiangTool-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YLiangTool;
+				PRODUCT_NAME = YLiangTool;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		570723866F41DA07DB225FCD4287C97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFA5B27C9567D4A8AEADFBBC041FFCB9 /* PagerTabStripView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PagerTabStripView/PagerTabStripView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MODULEMAP_FILE = Headers/Public/PagerTabStripView/PagerTabStripView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PagerTabStripView;
+				PRODUCT_NAME = PagerTabStripView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		850D824D3577C9A5EC3664D8A67505E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3FAE6C9DBC29C571B32D2B16F0B7E9 /* YLiangTool.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YLiangTool/YLiangTool-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YLiangTool;
+				PRODUCT_NAME = YLiangTool;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A65C63E17F8479DC62AFBAFD8DA98F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0299CB08F1F1BDFB07071CD6C3C9A3 /* PagerTabStripView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/PagerTabStripView/PagerTabStripView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MODULEMAP_FILE = Headers/Public/PagerTabStripView/PagerTabStripView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = PagerTabStripView;
+				PRODUCT_NAME = PagerTabStripView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D91E9256600A37E296E6707FD1563F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39FC21A61249DFBE762F37EC28F0204 /* Pods-Redbook.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Redbook/Pods-Redbook.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFAF5EB0FBC4579F2F88419E1E4E52DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09965A77BF37340004FC9100CBFB0FFB /* Pods-Redbook.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Redbook/Pods-Redbook.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0957BDAC7A5A6737DBB61AF43EDC4B32 /* Build configuration list for PBXNativeTarget "YLiangTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				850D824D3577C9A5EC3664D8A67505E6 /* Debug */,
+				187D79DFC6605C61047AE62CD23B8743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E4B9E56E949B36D689846015E05C894 /* Build configuration list for PBXNativeTarget "Pods-Redbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D91E9256600A37E296E6707FD1563F64 /* Debug */,
+				FFAF5EB0FBC4579F2F88419E1E4E52DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D300BE27098C6A23816D78A73E7CC08B /* Build configuration list for PBXNativeTarget "PagerTabStripView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570723866F41DA07DB225FCD4287C97C /* Debug */,
+				9A65C63E17F8479DC62AFBAFD8DA98F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

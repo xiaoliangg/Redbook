@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E27DBA62A1C5055B47B09FE /* libPods-Redbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51679409619D82802A4A79EF /* libPods-Redbook.a */; };
 		799943A627FBEAF200418AF3 /* RedbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943A527FBEAF200418AF3 /* RedbookApp.swift */; };
 		799943A827FBEAF200418AF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943A727FBEAF200418AF3 /* ContentView.swift */; };
 		799943AA27FBEAF300418AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799943A927FBEAF300418AF3 /* Assets.xcassets */; };
@@ -21,7 +22,6 @@
 		799943C727FBF07B00418AF3 /* addNewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943C627FBF07B00418AF3 /* addNewPage.swift */; };
 		799943C927FBF08600418AF3 /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943C827FBF08600418AF3 /* MessagePage.swift */; };
 		799943CB27FBF08E00418AF3 /* AboutMePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943CA27FBF08E00418AF3 /* AboutMePage.swift */; };
-		79F1127827FC29E400957976 /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 79F1127727FC29E400957976 /* PagerTabStripView */; };
 		79F1128627FC2C9F00957976 /* MainNavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128527FC2C9F00957976 /* MainNavBarItem.swift */; };
 		79F1128A27FC353B00957976 /* VideoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128927FC353B00957976 /* VideoPage.swift */; };
 		79F1128C27FC354F00957976 /* LivePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128B27FC354F00957976 /* LivePage.swift */; };
@@ -41,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51679409619D82802A4A79EF /* libPods-Redbook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Redbook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F4CA91D91FABB269F15976 /* Pods-Redbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redbook.release.xcconfig"; path = "Target Support Files/Pods-Redbook/Pods-Redbook.release.xcconfig"; sourceTree = "<group>"; };
 		799943A227FBEAF200418AF3 /* Redbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799943A527FBEAF200418AF3 /* RedbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedbookApp.swift; sourceTree = "<group>"; };
 		799943A727FBEAF200418AF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		79F112D0280165E700957976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		79F112D2280165EC00957976 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		79F112D32801691000957976 /* I18N.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I18N.swift; sourceTree = "<group>"; };
+		7B669D66F5EE23212340CE00 /* Pods-Redbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redbook.debug.xcconfig"; path = "Target Support Files/Pods-Redbook/Pods-Redbook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F1127827FC29E400957976 /* PagerTabStripView in Frameworks */,
+				1E27DBA62A1C5055B47B09FE /* libPods-Redbook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +99,8 @@
 				79F112CB280150C700957976 /* InfoPlist.strings */,
 				799943A427FBEAF200418AF3 /* Redbook */,
 				799943A327FBEAF200418AF3 /* Products */,
+				FB43EEAEF3680DA94502469A /* Pods */,
+				D8402BF90F992E1400BE3B17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,6 +260,24 @@
 			path = recommend;
 			sourceTree = "<group>";
 		};
+		D8402BF90F992E1400BE3B17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51679409619D82802A4A79EF /* libPods-Redbook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB43EEAEF3680DA94502469A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B669D66F5EE23212340CE00 /* Pods-Redbook.debug.xcconfig */,
+				55F4CA91D91FABB269F15976 /* Pods-Redbook.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 799943B027FBEAF300418AF3 /* Build configuration list for PBXNativeTarget "Redbook" */;
 			buildPhases = (
+				B0291534E72CB64B6902B9A8 /* [CP] Check Pods Manifest.lock */,
 				7999439E27FBEAF200418AF3 /* Sources */,
 				7999439F27FBEAF200418AF3 /* Frameworks */,
 				799943A027FBEAF200418AF3 /* Resources */,
@@ -271,9 +295,6 @@
 			dependencies = (
 			);
 			name = Redbook;
-			packageProductDependencies = (
-				79F1127727FC29E400957976 /* PagerTabStripView */,
-			);
 			productName = Redbook;
 			productReference = 799943A227FBEAF200418AF3 /* Redbook.app */;
 			productType = "com.apple.product-type.application";
@@ -303,9 +324,6 @@
 				"zh-Hans",
 			);
 			mainGroup = 7999439927FBEAF200418AF3;
-			packageReferences = (
-				79F1127627FC29E400957976 /* XCRemoteSwiftPackageReference "PagerTabStripView" */,
-			);
 			productRefGroup = 799943A327FBEAF200418AF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -329,6 +347,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0291534E72CB64B6902B9A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Redbook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7999439E27FBEAF200418AF3 /* Sources */ = {
@@ -505,6 +548,7 @@
 		};
 		799943B127FBEAF300418AF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B669D66F5EE23212340CE00 /* Pods-Redbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -536,6 +580,7 @@
 		};
 		799943B227FBEAF300418AF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F4CA91D91FABB269F15976 /* Pods-Redbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -587,25 +632,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		79F1127627FC29E400957976 /* XCRemoteSwiftPackageReference "PagerTabStripView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/xmartlabs/PagerTabStripView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		79F1127727FC29E400957976 /* PagerTabStripView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 79F1127627FC29E400957976 /* XCRemoteSwiftPackageReference "PagerTabStripView" */;
-			productName = PagerTabStripView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7999439A27FBEAF200418AF3 /* Project object */;
 }
