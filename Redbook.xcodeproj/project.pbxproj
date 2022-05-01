@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1E27DBA62A1C5055B47B09FE /* libPods-Redbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51679409619D82802A4A79EF /* libPods-Redbook.a */; };
+		797BFDD6281EE7060021F7AA /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797BFDD5281EE7060021F7AA /* Language.swift */; };
+		797BFDD8281EE7250021F7AA /* Strings+Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797BFDD7281EE7250021F7AA /* Strings+Localisation.swift */; };
+		797BFDDA281EE73A0021F7AA /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797BFDD9281EE73A0021F7AA /* LocalizationService.swift */; };
 		799943A627FBEAF200418AF3 /* RedbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943A527FBEAF200418AF3 /* RedbookApp.swift */; };
 		799943A827FBEAF200418AF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943A727FBEAF200418AF3 /* ContentView.swift */; };
 		799943AA27FBEAF300418AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799943A927FBEAF300418AF3 /* Assets.xcassets */; };
@@ -37,12 +40,14 @@
 		79F112A427FC457C00957976 /* FIleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112A327FC457C00957976 /* FIleItem.swift */; };
 		79F112C9280150C700957976 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79F112CB280150C700957976 /* InfoPlist.strings */; };
 		79F112CF280165E700957976 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79F112D1280165E700957976 /* Localizable.strings */; };
-		79F112D42801691000957976 /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112D32801691000957976 /* I18N.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		51679409619D82802A4A79EF /* libPods-Redbook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Redbook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F4CA91D91FABB269F15976 /* Pods-Redbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redbook.release.xcconfig"; path = "Target Support Files/Pods-Redbook/Pods-Redbook.release.xcconfig"; sourceTree = "<group>"; };
+		797BFDD5281EE7060021F7AA /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		797BFDD7281EE7250021F7AA /* Strings+Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Localisation.swift"; sourceTree = "<group>"; };
+		797BFDD9281EE73A0021F7AA /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
 		799943A227FBEAF200418AF3 /* Redbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799943A527FBEAF200418AF3 /* RedbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedbookApp.swift; sourceTree = "<group>"; };
 		799943A727FBEAF200418AF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,7 +81,6 @@
 		79F112CC280150CC00957976 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		79F112D0280165E700957976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		79F112D2280165EC00957976 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		79F112D32801691000957976 /* I18N.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I18N.swift; sourceTree = "<group>"; };
 		7B669D66F5EE23212340CE00 /* Pods-Redbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Redbook.debug.xcconfig"; path = "Target Support Files/Pods-Redbook/Pods-Redbook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		797BFDD4281EE6CD0021F7AA /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				797BFDD5281EE7060021F7AA /* Language.swift */,
+				797BFDD7281EE7250021F7AA /* Strings+Localisation.swift */,
+				797BFDD9281EE73A0021F7AA /* LocalizationService.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		7999439927FBEAF200418AF3 = {
 			isa = PBXGroup;
 			children = (
@@ -220,9 +234,9 @@
 		79F1129827FC3EB300957976 /* Helplers */ = {
 			isa = PBXGroup;
 			children = (
+				797BFDD4281EE6CD0021F7AA /* Localization */,
 				79F112A227FC454E00957976 /* fileItem */,
 				79F1129B27FC3EDD00957976 /* URLImage */,
-				79F112D32801691000957976 /* I18N.swift */,
 			);
 			path = Helplers;
 			sourceTree = "<group>";
@@ -274,7 +288,6 @@
 				7B669D66F5EE23212340CE00 /* Pods-Redbook.debug.xcconfig */,
 				55F4CA91D91FABB269F15976 /* Pods-Redbook.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -395,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F112A427FC457C00957976 /* FIleItem.swift in Sources */,
+				797BFDD8281EE7250021F7AA /* Strings+Localisation.swift in Sources */,
 				79F1129F27FC3F2200957976 /* ImageCache.swift in Sources */,
 				799943A827FBEAF200418AF3 /* ContentView.swift in Sources */,
 				79F1128E27FC355D00957976 /* FashionPage.swift in Sources */,
@@ -407,14 +421,15 @@
 				79F1129027FC356300957976 /* FoodPage.swift in Sources */,
 				79F1128A27FC353B00957976 /* VideoPage.swift in Sources */,
 				799943B927FBEDC700418AF3 /* ExplorePage.swift in Sources */,
+				797BFDDA281EE73A0021F7AA /* LocalizationService.swift in Sources */,
 				79F1128627FC2C9F00957976 /* MainNavBarItem.swift in Sources */,
-				79F112D42801691000957976 /* I18N.swift in Sources */,
 				799943C527FBF01C00418AF3 /* ShoppingPage.swift in Sources */,
 				799943C027FBEE4600418AF3 /* RecommendPage.swift in Sources */,
 				79F1129D27FC3F0500957976 /* URLImageModel.swift in Sources */,
 				799943B727FBEDBD00418AF3 /* FollowPage.swift in Sources */,
 				799943CB27FBF08E00418AF3 /* AboutMePage.swift in Sources */,
 				79F1129527FC3E1100957976 /* FileInfo.swift in Sources */,
+				797BFDD6281EE7060021F7AA /* Language.swift in Sources */,
 				79F1128C27FC354F00957976 /* LivePage.swift in Sources */,
 				799943BB27FBEDEA00418AF3 /* NearbyPage.swift in Sources */,
 				79F1129A27FC3ED000957976 /* URLImageView.swift in Sources */,
