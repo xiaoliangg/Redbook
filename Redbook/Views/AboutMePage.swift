@@ -8,20 +8,21 @@
 import SwiftUI
 
 struct AboutMePage: View {
-    @State var identifier = "en"
-
+    @AppStorage("language")
+    private var language = LocalizationService.shared.language
+    
+    
     var body: some View {
         VStack {
             Button("中文", action: {
-                self.identifier = "zh-Hans"
+                LocalizationService.shared.language = .zhHans
             })
             Button("English", action: {
-                self.identifier = "en"
+                LocalizationService.shared.language = .english_us
             })
             // 只需在 Localizable.strings 声明即可直接使用
-            Text("Test")
+            Text("Test".localized(language))
         }
-        .environment(\.locale, .init(identifier: identifier))
     }
 }
 

@@ -10,6 +10,9 @@ import SwiftUI
 struct MainCollectionPage: View {
     @State private var selection: Tab = .main
 
+    @AppStorage("language")
+    private var language = LocalizationService.shared.language
+    
     enum Tab {
         case main
         case shopping
@@ -23,32 +26,32 @@ struct MainCollectionPage: View {
         TabView(selection: $selection) {
             MainPage()
                 .tabItem {
-                    Label(I18N.mainPage, systemImage: "star")
+                    Label("MainPage".localized(language), systemImage: "star")
 //                        .foregroundColor(.red)
                 }
                 .tag(Tab.main)
             
             ShoppingPage()
                 .tabItem {
-                    Label(I18N.shopping, systemImage: "bag")
+                    Label("Shopping".localized(language), systemImage: "bag")
                 }
                 .tag(Tab.shopping)
             
             addNewPage()
                 .tabItem {
-                    Label(I18N.addNew, systemImage: "plus")
+                    Label("AddNew".localized(language), systemImage: "plus")
                 }
                 .tag(Tab.addNew)
             
             MessagePage()
                 .tabItem {
-                    Label(I18N.message, systemImage: "message")
+                    Label("Message".localized(language), systemImage: "message")
                 }
                 .tag(Tab.message)
             
             AboutMePage()
                 .tabItem {
-                    Label(I18N.aboutMe, systemImage: "person.crop.circle")
+                    Label("AboutMe".localized(language), systemImage: "person.crop.circle")
                 }
                 .tag(Tab.aboutMe)
             
