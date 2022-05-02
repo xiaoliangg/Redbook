@@ -9,6 +9,7 @@ import Foundation
 
 extension String {
 
+    /// yl 通过传入的 language 获取该字符串的本地字符串
     /// Localizes a string using given language from Language enum.
     /// - parameter language: The language that will be used to localized string.
     /// - Returns: localized string.
