@@ -10,8 +10,12 @@ import SwiftUI
 struct AboutMePage: View {
     @AppStorage("language")
     private var language = LocalizationService.shared.language
+    var userInfo:User
     
-    
+    init(){
+        userInfo = UserData().currentUser
+    }
+
     var body: some View {
         VStack {
             Button("中文", action: {
@@ -22,6 +26,11 @@ struct AboutMePage: View {
             })
             // 只需在 Localizable.strings 声明即可直接使用
             Text("Test".localized(language))
+            
+            Text(String(userInfo.id))
+            Text(userInfo.name)
+            Text(userInfo.imageURL)
+            
         }
     }
 }

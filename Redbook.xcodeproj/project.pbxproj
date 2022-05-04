@@ -37,7 +37,7 @@
 		79F1129D27FC3F0500957976 /* URLImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1129C27FC3F0500957976 /* URLImageModel.swift */; };
 		79F1129F27FC3F2200957976 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1129E27FC3F2200957976 /* ImageCache.swift */; };
 		79F112A127FC415300957976 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112A027FC415300957976 /* ModelData.swift */; };
-		79F112A427FC457C00957976 /* FIleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112A327FC457C00957976 /* FIleItem.swift */; };
+		79F112A427FC457C00957976 /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F112A327FC457C00957976 /* FileItem.swift */; };
 		79F112C9280150C700957976 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79F112CB280150C700957976 /* InfoPlist.strings */; };
 		79F112CF280165E700957976 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79F112D1280165E700957976 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -75,7 +75,7 @@
 		79F1129C27FC3F0500957976 /* URLImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageModel.swift; sourceTree = "<group>"; };
 		79F1129E27FC3F2200957976 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		79F112A027FC415300957976 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		79F112A327FC457C00957976 /* FIleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIleItem.swift; sourceTree = "<group>"; };
+		79F112A327FC457C00957976 /* FileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItem.swift; sourceTree = "<group>"; };
 		79F112C227FC788500957976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		79F112CA280150C700957976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79F112CC280150CC00957976 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -254,7 +254,7 @@
 		79F112A227FC454E00957976 /* fileItem */ = {
 			isa = PBXGroup;
 			children = (
-				79F112A327FC457C00957976 /* FIleItem.swift */,
+				79F112A327FC457C00957976 /* FileItem.swift */,
 			);
 			path = fileItem;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F112A427FC457C00957976 /* FIleItem.swift in Sources */,
+				79F112A427FC457C00957976 /* FileItem.swift in Sources */,
 				797BFDD8281EE7250021F7AA /* Strings+Localisation.swift in Sources */,
 				79F1129F27FC3F2200957976 /* ImageCache.swift in Sources */,
 				799943A827FBEAF200418AF3 /* ContentView.swift in Sources */,
