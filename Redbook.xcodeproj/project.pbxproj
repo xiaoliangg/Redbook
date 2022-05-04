@@ -25,6 +25,8 @@
 		799943C727FBF07B00418AF3 /* addNewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943C627FBF07B00418AF3 /* addNewPage.swift */; };
 		799943C927FBF08600418AF3 /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943C827FBF08600418AF3 /* MessagePage.swift */; };
 		799943CB27FBF08E00418AF3 /* AboutMePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943CA27FBF08E00418AF3 /* AboutMePage.swift */; };
+		79B155A728229113009D9B0C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B155A628229113009D9B0C /* UserData.swift */; };
+		79B155AA28229123009D9B0C /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B155A928229123009D9B0C /* DataUtil.swift */; };
 		79F1128627FC2C9F00957976 /* MainNavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128527FC2C9F00957976 /* MainNavBarItem.swift */; };
 		79F1128A27FC353B00957976 /* VideoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128927FC353B00957976 /* VideoPage.swift */; };
 		79F1128C27FC354F00957976 /* LivePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128B27FC354F00957976 /* LivePage.swift */; };
@@ -63,6 +65,8 @@
 		799943C627FBF07B00418AF3 /* addNewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewPage.swift; sourceTree = "<group>"; };
 		799943C827FBF08600418AF3 /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
 		799943CA27FBF08E00418AF3 /* AboutMePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMePage.swift; sourceTree = "<group>"; };
+		79B155A628229113009D9B0C /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		79B155A928229123009D9B0C /* DataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUtil.swift; sourceTree = "<group>"; };
 		79F1128527FC2C9F00957976 /* MainNavBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavBarItem.swift; sourceTree = "<group>"; };
 		79F1128927FC353B00957976 /* VideoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPage.swift; sourceTree = "<group>"; };
 		79F1128B27FC354F00957976 /* LivePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePage.swift; sourceTree = "<group>"; };
@@ -213,6 +217,14 @@
 			path = main;
 			sourceTree = "<group>";
 		};
+		79B155A828229123009D9B0C /* DataUtil */ = {
+			isa = PBXGroup;
+			children = (
+				79B155A928229123009D9B0C /* DataUtil.swift */,
+			);
+			path = DataUtil;
+			sourceTree = "<group>";
+		};
 		79F1128027FC2B3000957976 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +236,7 @@
 		79F1129327FC3DF000957976 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				79B155A628229113009D9B0C /* UserData.swift */,
 				79F1129427FC3E1100957976 /* FileInfo.swift */,
 				79F1129627FC3E1700957976 /* User.swift */,
 				79F112A027FC415300957976 /* ModelData.swift */,
@@ -234,6 +247,7 @@
 		79F1129827FC3EB300957976 /* Helplers */ = {
 			isa = PBXGroup;
 			children = (
+				79B155A828229123009D9B0C /* DataUtil */,
 				797BFDD4281EE6CD0021F7AA /* Localization */,
 				79F112A227FC454E00957976 /* fileItem */,
 				79F1129B27FC3EDD00957976 /* URLImage */,
@@ -409,6 +423,7 @@
 			files = (
 				79F112A427FC457C00957976 /* FileItem.swift in Sources */,
 				797BFDD8281EE7250021F7AA /* Strings+Localisation.swift in Sources */,
+				79B155A728229113009D9B0C /* UserData.swift in Sources */,
 				79F1129F27FC3F2200957976 /* ImageCache.swift in Sources */,
 				799943A827FBEAF200418AF3 /* ContentView.swift in Sources */,
 				79F1128E27FC355D00957976 /* FashionPage.swift in Sources */,
@@ -419,6 +434,7 @@
 				799943C927FBF08600418AF3 /* MessagePage.swift in Sources */,
 				799943B527FBEC0300418AF3 /* MainPage.swift in Sources */,
 				79F1129027FC356300957976 /* FoodPage.swift in Sources */,
+				79B155AA28229123009D9B0C /* DataUtil.swift in Sources */,
 				79F1128A27FC353B00957976 /* VideoPage.swift in Sources */,
 				799943B927FBEDC700418AF3 /* ExplorePage.swift in Sources */,
 				797BFDDA281EE73A0021F7AA /* LocalizationService.swift in Sources */,
