@@ -28,15 +28,3 @@ func decodeJson<T: Decodable>(_ srcString: String) -> T {
         fatalError("Couldn't parse \(srcString) as \(T.self):\n\(error)")
     }
 }
-
-func encodeJson<T: Encodable>(_ o: T) -> String {
-    let data: Data
-    let encoder = JSONEncoder()
-    do {
-        try data = encoder.encode(o)
-    } catch {
-        fatalError("Couldn't encode \(o) as String:\n\(error)")
-    }
-    let receive: String = String(data: data, encoding: .utf8)!;
-    return receive;
-}

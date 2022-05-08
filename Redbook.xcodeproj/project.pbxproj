@@ -27,6 +27,8 @@
 		799943CB27FBF08E00418AF3 /* AboutMePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799943CA27FBF08E00418AF3 /* AboutMePage.swift */; };
 		79B155A728229113009D9B0C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B155A628229113009D9B0C /* UserData.swift */; };
 		79B155AA28229123009D9B0C /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B155A928229123009D9B0C /* DataUtil.swift */; };
+		79EEC71B28278D5900D69CB2 /* Redbook_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79EEC71928278D5900D69CB2 /* Redbook_Model.xcdatamodeld */; };
+		79EEC71D28278D6F00D69CB2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EEC71C28278D6F00D69CB2 /* Persistence.swift */; };
 		79F1128627FC2C9F00957976 /* MainNavBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128527FC2C9F00957976 /* MainNavBarItem.swift */; };
 		79F1128A27FC353B00957976 /* VideoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128927FC353B00957976 /* VideoPage.swift */; };
 		79F1128C27FC354F00957976 /* LivePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F1128B27FC354F00957976 /* LivePage.swift */; };
@@ -67,6 +69,8 @@
 		799943CA27FBF08E00418AF3 /* AboutMePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMePage.swift; sourceTree = "<group>"; };
 		79B155A628229113009D9B0C /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		79B155A928229123009D9B0C /* DataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUtil.swift; sourceTree = "<group>"; };
+		79EEC71A28278D5900D69CB2 /* Redbook_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Redbook_Model.xcdatamodel; sourceTree = "<group>"; };
+		79EEC71C28278D6F00D69CB2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		79F1128527FC2C9F00957976 /* MainNavBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavBarItem.swift; sourceTree = "<group>"; };
 		79F1128927FC353B00957976 /* VideoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPage.swift; sourceTree = "<group>"; };
 		79F1128B27FC354F00957976 /* LivePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePage.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 		799943A427FBEAF200418AF3 /* Redbook */ = {
 			isa = PBXGroup;
 			children = (
+				79EEC71828278D3900D69CB2 /* coreData */,
 				79F112C3280149DB00957976 /* images */,
 				79F112C227FC788500957976 /* Info.plist */,
 				799943A527FBEAF200418AF3 /* RedbookApp.swift */,
@@ -223,6 +228,15 @@
 				79B155A928229123009D9B0C /* DataUtil.swift */,
 			);
 			path = DataUtil;
+			sourceTree = "<group>";
+		};
+		79EEC71828278D3900D69CB2 /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				79EEC71928278D5900D69CB2 /* Redbook_Model.xcdatamodeld */,
+				79EEC71C28278D6F00D69CB2 /* Persistence.swift */,
+			);
+			path = coreData;
 			sourceTree = "<group>";
 		};
 		79F1128027FC2B3000957976 /* Resources */ = {
@@ -433,6 +447,7 @@
 				799943A627FBEAF200418AF3 /* RedbookApp.swift in Sources */,
 				799943C927FBF08600418AF3 /* MessagePage.swift in Sources */,
 				799943B527FBEC0300418AF3 /* MainPage.swift in Sources */,
+				79EEC71B28278D5900D69CB2 /* Redbook_Model.xcdatamodeld in Sources */,
 				79F1129027FC356300957976 /* FoodPage.swift in Sources */,
 				79B155AA28229123009D9B0C /* DataUtil.swift in Sources */,
 				79F1128A27FC353B00957976 /* VideoPage.swift in Sources */,
@@ -450,6 +465,7 @@
 				799943BB27FBEDEA00418AF3 /* NearbyPage.swift in Sources */,
 				79F1129A27FC3ED000957976 /* URLImageView.swift in Sources */,
 				79F1129727FC3E1700957976 /* User.swift in Sources */,
+				79EEC71D28278D6F00D69CB2 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +695,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79EEC71928278D5900D69CB2 /* Redbook_Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79EEC71A28278D5900D69CB2 /* Redbook_Model.xcdatamodel */,
+			);
+			currentVersion = 79EEC71A28278D5900D69CB2 /* Redbook_Model.xcdatamodel */;
+			path = Redbook_Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7999439A27FBEAF200418AF3 /* Project object */;
 }
